@@ -17,5 +17,6 @@ public class followthemouseplease : MonoBehaviour
         Vector2 mousPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         //Camera.main.ScreenToWorldPoint(Input.mousePosition);
         transform.position = mousPos;
+
     }
 }

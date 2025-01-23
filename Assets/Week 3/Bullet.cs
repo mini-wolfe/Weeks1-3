@@ -12,7 +12,9 @@ public class Bullet : MonoBehaviour
         {
             Movement();
 
-        } else {
+        }
+        else
+        {
             PointAtMouse();
 
         }
@@ -20,19 +22,19 @@ public class Bullet : MonoBehaviour
 
 
 
-            void PointAtMouse()
-            {
-                Vector3 mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                mouse.z = 0;
-                Vector2 direction = mouse - transform.position;
+    void PointAtMouse()
+    {
+        Vector3 mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mouse.z = 0;
+        Vector2 direction = mouse - transform.position;
 
-                transform.up = direction;
-            }
+        transform.up = direction;
+    }
 
-        void Movement()
-        {
-            transform.position += transform.up * speed * Time.deltaTime;
-        } 
-        
-              
+    void Movement()
+    {
+        transform.position += transform.up * speed * Time.deltaTime;
+    }
 
+
+}

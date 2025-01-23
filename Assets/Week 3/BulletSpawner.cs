@@ -33,6 +33,6 @@ public class BulletSpawner : MonoBehaviour
 
     void Fire()
     {
-
+        bullet.hasBeenFired = true;
     }
 }

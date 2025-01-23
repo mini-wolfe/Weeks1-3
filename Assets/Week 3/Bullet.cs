@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float speed = 5;
-    bool hasBeenFired = false;
+     public bool hasBeenFired = false;
     void Update()
     {
         PointAtMouse();

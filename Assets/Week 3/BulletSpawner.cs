@@ -8,12 +8,7 @@ public class BulletSpawner : MonoBehaviour
     public Bullet bullet;
 
     void Start()
-    {
-        Spawn();
-    }
-
-    void Update()
-    {
+    { 
         if(bullet == null)
         {
             Spawn();
@@ -34,5 +29,6 @@ public class BulletSpawner : MonoBehaviour
     void Fire()
     {
         bullet.hasBeenFired = true;
+        bullet = null;
     }
 }

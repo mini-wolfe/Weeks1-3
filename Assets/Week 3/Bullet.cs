@@ -16,6 +16,7 @@ public class Bullet : MonoBehaviour
             PointAtMouse();
 
         }
+    }
 
 
 
@@ -28,9 +29,10 @@ public class Bullet : MonoBehaviour
                 transform.up = direction;
             }
 
-            void Movement() 
-        { 
-            transform.position += transform.up * speed * Time.deltaTime; 
-        }
+        void Movement()
+        {
+            transform.position += transform.up * speed * Time.deltaTime;
+        } 
+        
               
 

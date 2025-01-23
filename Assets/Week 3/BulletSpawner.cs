@@ -8,8 +8,13 @@ public class BulletSpawner : MonoBehaviour
     public Bullet bullet;
 
     void Start()
-    { 
-        if(bullet == null)
+    {
+        Spawn();
+    }
+
+     void Update()
+    {
+        if (bullet == null)
         {
             Spawn();
         }
@@ -19,7 +24,6 @@ public class BulletSpawner : MonoBehaviour
             Fire();
         }
     }
-
     void Spawn()
     {
         Instantiate(prefab);

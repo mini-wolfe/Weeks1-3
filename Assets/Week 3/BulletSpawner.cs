@@ -22,6 +22,7 @@ public class BulletSpawner : MonoBehaviour
 
     void Spawn()
     {
+        Instantiate(prefab);
         GameObject spawnedBullet = Instantiate(prefab);
         bullet = spawnedBullet.GetComponent<Bullet>();
     }

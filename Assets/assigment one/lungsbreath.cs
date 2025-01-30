@@ -34,5 +34,6 @@ public class lungsbreath : MonoBehaviour
         t += reverse * Time.deltaTime; 
         // telling the lungs that they have a start and end position that i assign them that they will lerp to and from 
         transform.position = Vector2.Lerp(start.position,end.position,t);
+    
     }
 }

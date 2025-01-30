@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class heartbeat : MonoBehaviour
 //declare range 
-   [Range(0,1)]
-
-   //adding in t value for the pace aat which the heart will beat 
-   public float t;
+{
+//adding in t value for the pace aat which the heart will beat
+   [Range(0,1)] 
+   float t;
    //telling the heart to return to the orignal postion. 
    public float reverse;
    // public boulean for when mousse is click 
@@ -36,16 +36,15 @@ public class heartbeat : MonoBehaviour
         //if statment for when mouse , left mouse button is clicked making the boolean true 
        if(Input.GetMouseButtonDown(0))
        {
-           checkmouseclick = true; 
-          
+           checkmouseclick = true;   
        }
        // fucntion for when mouse is down have the heart pulse base on the animation curve 
-      if(checkmouseclick == true){
+      if(checkmouseclick == true)
+      {
 
       t += reverse * Time.deltaTime; 
 
       transform.localScale = Vector2.one * pulse.Evaluate(t);
       }
-        
-    }
+    }          
 }
